@@ -19,6 +19,7 @@ struct ListingImageCarouselView: View {
                     .clipped()
             }
         }
+        .frame(height: 250)
         .tabViewStyle(.page)
     }
 }

@@ -10,11 +10,20 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ScrollView {
+            
+            DeliveTo()
+            
             FirstListingScrollView(imageNames: ["laptop","book","monitor","keyboard","electronics", "skincare"])
-                ListingImageCarouselView(
-                    imageNames: ["listinghomepage1", "listinghomepage2", "listinghomepage3"]
-                )
+            
+            ListingImageCarouselView(
+                imageNames: ["listinghomepage1", "listinghomepage2", "listinghomepage3"]
+            )
+            KeepShopingFor(imageNames: ["face wash","lipstick","perfume","shampoo"])
                 .frame(height: 250)
+            
+            Sponsored()
+            
+            DealsForYou(imageNames: ["smart watch","PS5 ","books","phone cover"], discount: "64% off")
         }
     }
 }

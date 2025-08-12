@@ -26,6 +26,7 @@ struct FirstListingScrollView: View {
                 }
             }
         }
+        .frame(width: .infinity, height: 80)
     }
 }
 
